@@ -1,0 +1,446 @@
+:root {
+    --First-Color:#00C7FC;
+    --Second-Color:white;
+    --Third-Color:black;
+    --Text-Pg:#00c5fc5c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Start Header */
+header {
+    background-image: url(../img/landing.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--Second-Color);
+}
+
+.navbar .navbar-nav .nav-item.active ,
+.navbar .navbar-nav .nav-item:hover{
+    border-bottom: 1px solid var(--First-Color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--First-Color);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.Search {
+    font-size: 1.25rem;
+}
+
+.Header-Text {
+    background-color:var(--Text-Pg);
+}
+
+.Header-Text p {
+    max-width: 530px;
+}
+
+.Controls span,
+.Section-7 .Controls span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--Second-Color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.Controls span.active,
+.Section-7 .Controls span.active {
+    background-color: var(--First-Color);
+}
+/* End Header */
+/* Start Section-2 */
+.Section-2 .Sec2-Text h2::after,
+.Section-4 .Sec2-Text h2::after,
+.Section-5 .Sec2-Text h2::after,
+.Section-9 .Sec2-Text h2::after,
+.Section-11 .Sec2-Text h2::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: var(--Third-Color);
+}
+
+.Section-2 .Sec2-Text h2::before,
+.Section-4 .Sec2-Text h2::before,
+.Section-5 .Sec2-Text h2::before,
+.Section-9 .Sec2-Text h2::before,
+.Section-11 .Sec2-Text h2::before  {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border: 2px solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--Second-Color);
+    z-index: 2;
+}
+
+.Section-2 .Sec2-Text p,
+.Section-4 .Sec2-Text p,
+.Section-5 .Sec2-Text p,
+.Section-9 .Sec2-Text p,
+.Section-11 .Sec2-Text p,
+.Sec2-Contain .Contain-Text p {
+    max-width: 500px;
+}
+
+.Sec2-Contain .Contain-Text h2 {
+    color: var(--First-Color);
+}
+
+.Display {
+    font-size: 3rem;
+}
+/* End Section-2 */
+/* Start Section-3 */
+.Section-3 {
+    background-image: url(../img/design-features.jpg);
+    background-size: 100% 100%;
+}
+
+.Text-Pg {
+    background-color: var(--Text-Pg);
+    height: 400px;
+}
+
+.Mobile {
+    bottom: -120px; 
+}
+/* End Section-3 */
+/* Start Section-4 */
+.Section-4 .row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.Section-4 .nav .nav-link {
+    color: var(--Third-Color);
+}
+
+.Section-4 .nav .nav-link.active,
+.Section-4 .Button {
+    background-color: var(--First-Color);
+    color: var(--Second-Color);
+}
+
+.Sec4-Contain .Img-Text p {
+    color: var(--First-Color);
+}
+
+.Sec4-Contain .Img-Text {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.Sec4-Contain:hover .Img-Text {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.Sec4-Contain img {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.Sec4-Contain:hover img {
+    transform: scale(1.2) rotate(5deg);
+    -webkit-transform: scale(1.2) rotate(5deg);
+    -moz-transform: scale(1.2) rotate(5deg);
+    -ms-transform: scale(1.2) rotate(5deg);
+    -o-transform: scale(1.2) rotate(5deg);
+}
+/* End Section-4 */
+/* Start Video */
+.Video-Text {
+    background-color: var(--Text-Pg);
+}
+
+.Video-Layer {
+    height: 99.2%;
+}
+
+.Video .Button {
+    background-color: var(--Third-Color);
+}
+/* End Video */
+/* Start Section-6 */
+.Section-6 {
+    background-image: url(../img/stats.png);
+    background-size: 100% 100%;
+    top: -215px;
+}
+
+@media only screen and (max-width: 550px) {
+    .Section-6 {
+        top:-165px;
+    }
+    .Contain-6 {
+        width: 95%;
+        margin: auto;
+    }
+}
+.Sec5-img img{
+    width: 100%;
+}
+
+.Contain-6 {
+    background-color: var(--Text-Pg);
+}
+
+.Stats-Icon {
+    font-size: 1rem;
+    width: 50px;
+    height: 50px;
+}
+.Number {
+    font-size: 3.5rem;
+}
+/* End Section-6 */
+/* Start Section-7 */
+.Section-7 {
+    top: -95px;
+}
+
+.Sec7-Contain p,
+.Sec7-Contain p {
+    max-width: 500px;
+}
+
+.progress {
+    height: 30px;
+}
+
+.progress-bar {
+    background-color:#00C7FC ;
+}
+
+.ADOBE::before,
+.HTML-CSS::before,
+.Js::before,
+.PHP::before {
+    content: attr(data-progress);
+    position: absolute;
+    left: 86.5%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    top: -25%;
+    margin-left: 2px;
+}
+
+.ADOBE::after,
+.HTML-CSS::after,
+.Js::after,
+.PHP::after {
+    content: "";
+    position: absolute;
+    top: 27%;
+    left:  88.5%;
+    border: 8px solid ;
+    border-color:black transparent transparent ;
+}
+
+.Mobile-2::before {
+    left: 81.5%;
+}
+
+.Mobile-3::before {
+    left: 76.5%;
+}
+
+.Mobile-2::after {
+    left: 83.5%;
+}
+
+.Mobile-3::after {
+    left: 78.5%;
+}
+@media only screen and (max-width: 768px) {
+    .Mobile::before {
+        left: 84.5%;
+    }
+    .Mobile-2::before {
+        left: 80.5%;
+    }
+    .Mobile-3::before {
+        left: 75.5%;
+    }
+    .ADOBE::after {
+        left: 87.5%;
+    }
+}
+
+.Section-7  .Controls span {
+    border-color: black;
+}
+/* End Section-7 */
+/* Start Section-8 */
+.Section-8 {
+    background-image: url(../img/quote.jpg);
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+.Section-8 p {
+    max-width: 1000px;
+}
+/* End Section-8 */
+/* Start Section-9 */
+.Sec9-Contain {
+    background-color: #FCFCFC;
+}
+
+.Pricing {
+    border-top: 1px solid var(--First-Color);
+    border-bottom: 1px solid var(--First-Color);
+}
+
+.Offers {
+    border-bottom: 1px solid var(--First-Color);
+}
+
+.Offers p:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 150px;
+    height: 1px;
+    background-color: var(--First-Color);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.Sec9-Contain a {
+    color: #5A1A8B;
+    border: 1px solid var(--First-Color);
+}
+
+.Contact-Btn {
+    background-color: var(--First-Color);
+}
+/* End Section-9 */
+/* Start Section-10 */
+.Section-10 {
+    background-image: url(../img/subscribe.jpg);  
+    height: 30vh; 
+}
+
+.Sec10-Contain p {
+    max-width: 600px;
+}
+
+.Sec10-Contain form input[type="email"] {
+    border: 1px solid var(--Second-Color);
+    background-color: transparent;
+    caret-color: var(--First-Color);
+    width:500px;
+    border-right: none;
+}
+
+.Sec10-Contain form input[type="submit"] {
+    background-color: var(--First-Color);
+    border: 1px solid var(--Second-Color);
+}
+
+.Sec10-Contain form input:focus {
+    outline: none;
+}
+
+.Sec10-Contain form input::placeholder {
+    color: var(--Second-Color);
+}
+/* End Section-10 */
+/* Start Section-11 */
+.Send,
+.Send:hover {
+    background-color: var(--First-Color);
+}
+/* End Section-11 */
+/* Start Footer */
+footer {
+    background-image: url(../img/subscribe.jpg);
+    background-size: 100% 100%;
+    height: 40vh;
+}
+
+.Footer-Contain h4::after {
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 200px;
+    height: 1px;
+    background-color: var(--Second-Color);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.Footer-Contain p span {
+    color: var(--First-Color);
+}
+/* End Footer */
